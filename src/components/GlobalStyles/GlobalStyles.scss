@@ -1,17 +1,19 @@
 @import "normalize.css";
 
 :root {
+    //Colors
     --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --text-color: #161823;
 
     //Default Layout
     --default-layout-header-height: 6rem;
     --default-layout-width: 115rem;
     --default-layout-horizontal-spacer: 24px;
+    --default-layout-header-height: 60px;
 
-    --black: #000;
-    --white: #fff;
-    --text-color: #161823;
-
+    //Font
     --font-family: "ProximaNova", sans-serif;
 }
 
@@ -31,6 +33,39 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-color);
+    overflow-y: overlay;
+}
+
+// Scrollbar css
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 button,
