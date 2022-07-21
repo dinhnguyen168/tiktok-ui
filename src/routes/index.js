@@ -1,5 +1,5 @@
-import { HeaderOnlyLayout } from "@/components/Layout";
-import endpoints from "@/config/endpoints";
+import { HeaderOnlyLayout } from "@/layouts";
+import config from "@/config";
 
 //Pages
 import Home from "@/pages/Home";
@@ -9,11 +9,11 @@ import Upload from "@/pages/Upload";
 import Search from "@/pages/Search";
 
 const publicRoutes = [
-    { path: endpoints.home, component: Home },
-    { path: endpoints.following, component: Following },
-    { path: endpoints.profile, component: Profile },
-    { path: endpoints.upload, component: Upload, layout: HeaderOnlyLayout },
-    { path: endpoints.search, component: Search, layout: null },
+    { path: config.endpoints.following, component: Following },
+    { path: config.endpoints.home, component: Home },
+    { path: config.endpoints.profile, component: Profile },
+    { path: config.endpoints.upload, component: Upload, layout: HeaderOnlyLayout },
+    { path: config.endpoints.search, component: Search, layout: null },
 ];
 
 const privateRoutes = [];
